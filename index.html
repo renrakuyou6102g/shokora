@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 動画共有サイト</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        text-align: center;
+        width: 90%;
+        max-width: 800px;
+    }
+    
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    #videoContainer {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube 動画共有</h1>
+        <input type="text" id="youtubeUrl" placeholder="YouTubeのURLを入力してください">
+        <button id="saveUrlButton">保存</button>
+        <div id="videoContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
