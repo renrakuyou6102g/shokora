@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube動画共有サイト</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .share-container {
+        margin-bottom: 20px;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        width: calc(100% - 20px);
+        max-width: 400px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #218838;
+    }
+    
+    .videos-container {
+        margin-top: 20px;
+    }
+    
+    .video {
+        margin-bottom: 20px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 315px;
+        border: none;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube動画共有サイト</h1>
+        </header>
+
+        <section class="share-container">
+            <h2>動画を共有する</h2>
+            <form id="shareForm">
+                <input type="text" id="youtubeUrl" placeholder="YouTubeのURLを入力" required>
+                <button type="submit">共有する</button>
+            </form>
+        </section>
+
+        <section class="videos-container" id="videosContainer">
+            <h2>共有された動画</h2>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
